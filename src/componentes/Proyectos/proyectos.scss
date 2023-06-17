@@ -1,0 +1,319 @@
+.ContenedorGeneralProyectos{
+    width: 100%;
+    height: auto;
+    padding-bottom: 42px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+}
+
+.contenedortituloproyectos{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    }
+
+h1{
+    text-align: center;
+}
+.contenedortituloproyectos h1{
+        height: auto;
+        padding-bottom: 10px;
+        color: #05182A;
+        font-family: verdana;
+        border-bottom: 3px solid #05182A;
+        margin-left: auto;
+        margin-right: auto;
+        width:min-content;
+}
+
+
+.contenedorproyectos{
+    display: grid;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.contenedorgeneralfotos div:hover .botonoculto{
+    transition: all 0.5s;
+    margin-bottom: 17%;
+
+
+}
+
+.contenedorgeneralfotos div h2{
+    opacity: 0;
+    color: rgba(36, 30, 30, 0.829);
+
+}
+
+.contenedorgeneralfotos div:hover h2{
+    transition: all 0.5s;
+    margin-top: 16%;
+    font-family: verdana;
+    font-weight: bolder;
+    border-width: 1px;
+    font-size: 20px;
+
+}
+.contenedorcalculadora{
+    background-image: url(./Imagenes/calculadora1.png) ;
+}
+
+.contenedorcalculadora:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/calculadora1.png) ;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.botonoculto{
+    width: 130px;
+    height: 38px;
+    background: none;
+    opacity: 0;
+    border-color:  #e26959;
+    color: rgba(36, 30, 30, 0.829);
+    border-width: 2px;
+    font-family: verdana;
+    font-weight: bolder;
+    border-width: 1.5px;
+    font-size: 17px;
+    border-radius: 2.3px;
+    cursor:pointer;
+}
+
+.botonoculto:hover{
+    background-color: #df8376d7;
+
+}
+.contenedorcrunchyroll{
+    background: url(./Imagenes/crunchyroll1.png) ;
+}
+
+.contenedorcrunchyroll:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/crunchyroll1.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorlaberinto{
+    background-image: url(./Imagenes/laberinto2.png) ;
+}
+
+.contenedorlaberinto:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/laberinto2.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorluna{
+    background-image: url(./Imagenes/moonquakechallenge3.png) ;
+}
+
+.contenedorRickandMorty{
+    background-image: url(./Imagenes/rickandmorty1.png) ;
+}
+
+.contenedorRickandMorty:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/rickandmorty1.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contenedorluna:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/moonquakechallenge3.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contenedorgeneralfotos div{
+
+    margin-top: 10px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: all 3s;
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 873px)  {
+    .contenedorgeneralfotos div{
+        width: 280px;
+        height: 200px;
+    }
+
+    .contenedorgeneralfotos{
+        width: 290px;
+        height: 210px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .contenedorproyectos{
+        grid-template-columns: auto;
+    }
+    .modal{
+        width: 95%;
+        height: 98%;
+    }
+}
+  
+@media screen and (min-width: 874px) {
+    .contenedorgeneralfotos div{
+        width: 400px;
+        height: 210px;
+    }
+
+    .contenedorgeneralfotos{
+        width: 410px;
+        height: 220px;
+    }
+
+    .contenedorproyectos{
+        grid-template-columns: auto auto;
+    }
+
+    .modal{
+        width: 550px;
+        height: 500px;
+    }
+  }
+  
+
+.contenedorgeneralfotos div:hover button{
+    opacity: 1;
+}
+
+.contenedorgeneralfotos div:hover h2{
+    opacity: 1;
+}
+
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  .imagenenslider{
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: top;
+
+  }
+
+
+.contenedorsliders{
+    margin-top: 0px;
+}
+
+.contenedorheader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorunico{
+    @import "~bootstrap/scss/bootstrap";
+    
+}
+
+.botoncerrar{
+    background: none;
+    border: none;
+    cursor:pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.botoncerrar:hover{
+    color: rgb(87, 63, 63);
+}
+
+.contenedorcerar{
+    position: absolute;
+    bottom:0; right:0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.contenedorcontenidomodal h2{
+    font-family: verdana;
+    color: rgb(44, 56, 71);
+    margin-bottom: 2;
+}
+
+
+.contenedorcontenidomodal h3{
+    font-family: verdana;
+    color: rgb(95, 101, 109);
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom-style:groove;
+
+
+}
+
+.description{
+    font-family: verdana;
+    padding-bottom: 10px;
+    border-bottom-style:groove;
+
+
+}
+.contenedorcontenidomodal p{
+    font-family: verdana;
+
+}
+
+.contenedorcontenidomodal a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.weight-font{
+    font-weight: bold;
+}
+
+.contenedorcontenidomodal{
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contenedorcalculadora{
+    background-color: rgb(228, 241, 241);
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    background-color: rgb(228, 241, 241);
+}
