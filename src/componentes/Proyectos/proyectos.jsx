@@ -194,7 +194,7 @@ const Proyectos = () => {
         </div>
         <div className="contenedorgeneralfotos">
           <div className="contenedorRickandMorty">
-            <h2> MoonQuake Map</h2>
+            <h2>Rick and Morty Wiki</h2>
             <button type="button" className="botonoculto" onClick={() => setIsOpen5(true)}> See More </button>
             <Modal className="modal" isOpen={modalIsOpen5} onRequestClose={() => setIsOpen5(false)}>
               <div className="contenedorsliders">
